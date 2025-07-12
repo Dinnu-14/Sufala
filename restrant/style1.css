@@ -7,7 +7,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg, #E2BC8F, #554531, #E2BC8F);
+  background: linear-gradient(135deg, hsl(33, 59%, 72%), #554531, #E2BC8F);
   color: #fff;
 }
 
@@ -112,22 +112,28 @@ a {
 .products {
   padding: 50px 20px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(200px, 1fr)); /* Always 3 columns */
+  grid-template-columns: repeat(3, minmax(200px,1fr)); /* Always 3 columns */
   gap: 20px;
   overflow-x: auto;
+  width: 800px;
+  margin-top: 30px;
 }
 
 .product-card {
   background: #00292D;
   padding: 20px;
-  border-radius: 15px;
+  border-radius: 5px;
   cursor: pointer;
   transition: transform 0.3s;
-  min-width: 200px; /* Prevent shrinking too small */
+  
+  /* min-width: 200px; */
 }
 
 .product-card:hover {
@@ -203,14 +209,16 @@ a {
   }
 
   .product-grid {
-    grid-template-columns: repeat(3, 80%); /* Force 3 wide items, scrollable */
-    overflow-x: scroll;
-    padding: 50px;
+    grid-template-columns: repeat(3,1fr); /* Force 3 wide items, scrollable */
+    overflow-x: hidden;
+    padding: 10px;
+    width: 100%;
   }
 
   .product-card {
     flex: 0 0 auto;
-    padding: 50px;
+    padding: 10px;
+    /* width: 120px ; */
   }
 
   .shop-btn {
@@ -220,6 +228,9 @@ a {
 
   .logo_img img {
     max-width: 100px; /* smaller logo on mobile */
+  }
+  .product-card img{
+    width: 60px;
   }
 
 
