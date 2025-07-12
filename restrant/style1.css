@@ -7,8 +7,17 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg, hsl(33, 59%, 72%), #554531, #E2BC8F);
+  background: hsla(60, 100%, 49%, 1);
+
+background: linear-gradient(90deg, hsla(60, 100%, 49%, 1) 0%, hsla(77, 85%, 32%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(60, 100%, 49%, 1) 0%, hsla(77, 85%, 32%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(60, 100%, 49%, 1) 0%, hsla(77, 85%, 32%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FAFA00", endColorstr="#70960C", GradientType=1 );
   color: #fff;
+  
 }
 
 h1, h2, h3 {
